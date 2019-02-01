@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,17 +19,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vva-Uk-QTE">
-                                <rect key="frame" x="117" y="269" width="86" height="30"/>
+                                <rect key="frame" x="117" y="80" width="86" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="WWU-4w-nhF"/>
+                                </constraints>
                                 <state key="normal" title="Get Settings"/>
                                 <connections>
                                     <action selector="actGetNotificationSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sGG-1X-ZtN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMX-FJ-oaJ">
+                                <rect key="frame" x="99" y="144" width="122" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="wBv-3D-Fvg"/>
+                                </constraints>
+                                <state key="normal" title="Register for APNs"/>
+                                <connections>
+                                    <action selector="actRegisterAPNS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wek-UF-rx7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uk6-X1-RvK">
+                                <rect key="frame" x="114" y="208" width="92" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Fgz-iA-dIh"/>
+                                </constraints>
+                                <state key="normal" title="Get FB Token"/>
+                                <connections>
+                                    <action selector="takeFBToken:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aJq-nm-vng"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Vva-Uk-QTE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Caq-51-xUI"/>
-                            <constraint firstItem="Vva-Uk-QTE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yNB-CL-R9F"/>
+                            <constraint firstItem="CMX-FJ-oaJ" firstAttribute="top" secondItem="Vva-Uk-QTE" secondAttribute="bottom" constant="20" id="NmO-e4-oKg"/>
+                            <constraint firstItem="uk6-X1-RvK" firstAttribute="top" secondItem="CMX-FJ-oaJ" secondAttribute="bottom" constant="20" id="QCi-Ge-khv"/>
+                            <constraint firstItem="uk6-X1-RvK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QEa-HZ-fjQ"/>
+                            <constraint firstItem="CMX-FJ-oaJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cSF-E2-Wy8"/>
+                            <constraint firstItem="Vva-Uk-QTE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="uPw-8N-EsT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

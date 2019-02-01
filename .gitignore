@@ -1,2 +1,4 @@
 /scripts
-
+/Pods
+.DS_Store
+Podfile.lock

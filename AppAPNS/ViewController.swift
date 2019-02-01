@@ -8,6 +8,7 @@
 
 import UIKit
 import UserNotifications
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -18,10 +19,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func actRegisterAPNS(_ sender: AnyObject) {
-        let center = UNUserNotificationCenter.current()
-        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
-            // Enable or disable features based on authorization.
-        }
+        UIApplication.appDelegate.registerForAPN()
     }
     
     @IBAction func actGetNotificationSettings(_ sender: AnyObject) {
@@ -38,6 +36,17 @@ class ViewController: UIViewController {
                 
             case .notSupported:
                 print("something vital went wrong here")
+            }
+        }
+    }
+
+    @IBAction func takeFBToken(_ sender: AnyObject) {
+        InstanceID.instanceID().instanceID { (result, error) in
+            if let error = error {
+                print("Error fetching remote instance ID: \(error)")
+            } else if let result = result {
+                print("Remote instance ID token: \(result.token)")
+                //self.instanceIDTokenMessage.text  = "Remote InstanceID token: \(result.token)"
             }
         }
     }

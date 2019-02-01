@@ -1,0 +1,23 @@
+APNs log
+leonid iphone (ios12)
+APN(12+) requestAuthorization result: granted: true; error:nil
+APN didRegisterForRemoteNotificationsWithDeviceToken >> F782B27CA71BBC60D46E714925A50E1DAF189FA0A1BBE2CC870F8CD90F788E4B <<
+----> app in foreground
+APNd willPresent notification >> <UNNotification: 0x2822003e0; date: 2019-02-01 10:01:00 +0000, request: <UNNotificationRequest: 0x282c70ea0; identifier: 3C748275-3F21-46BC-A42F-98313303DC96, content: <UNNotificationContent: 0x281722a00; title: my title, subtitle: my subtitle, body: my body text message, summaryArgument: (null), summaryArgumentCount: 0, categoryIdentifier: mycategory, launchImageName: , threadIdentifier: , attachments: (
+), badge: 999, sound: <UNNotificationSound: 0x280622ac0>,, trigger: <UNPushNotificationTrigger: 0x282024c70; contentAvailable: NO, mutableContent: NO>>> <<
+------- in bg - nothing
+----- open from APN
+APNd didReceive response >> <UNNotificationResponse: 0x2822347e0; actionIdentifier: com.apple.UNNotificationDefaultActionIdentifier, notification: <UNNotification: 0x2822346a0; date: 2019-02-01 10:02:50 +0000, request: <UNNotificationRequest: 0x282c77390; identifier: CB131DA5-14B3-440A-82C3-AE54D0A82C30, content: <UNNotificationContent: 0x281725d40; title: my title, subtitle: my subtitle, body: my body text message, summaryArgument: (null), summaryArgumentCount: 0, categoryIdentifier: mycategory, launchImageName: , threadIdentifier: , attachments: (
+), badge: 999, sound: <UNNotificationSound: 0x2806287e0>,, trigger: <UNPushNotificationTrigger: 0x282028a10; contentAvailable: NO, mutableContent: NO>>>> <<
+2019-02-01 12:03:30.076293+0200 AppAPNS[36324:2313183] Warning: UNUserNotificationCenter delegate received call to -userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler: but the completion handler was never called.
+-------------
+===== launch with notif off
+APN(12+) requestAuthorization result: granted: false; error:nil
+APN(12+) User denied the permissions
+;;;;;;;;;;;;;;;;;;;;
+APNs sign: trigger == UNPushNotificationTrigger
+===== FireBase
+
+== ip6-beta
+Remote instance ID token: eRTFLFT17Es:APA91bGKrH7zmeJqtZ4AAeLOl_cfcco4prrtMuAsXr_Ct3JrvsQuqGpJg3YjksLm7ecy2cDXWMWfjOOB-ysqX307FPtL6dAna_mM7u3lhFxWbWrMESNRpWKPnuMo9NVxLkijjJ9_eQAU
+
