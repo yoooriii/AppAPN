@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C363204CCFC4280FC42EFAD /* Pods_AppAPNSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9562EE0382E99FEEC24F3BB /* Pods_AppAPNSUITests.framework */; };
-		B350B5372204656900510668 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B350B5362204656900510668 /* GoogleService-Info.plist */; };
-		B350B5382204690400510668 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B350B5362204656900510668 /* GoogleService-Info.plist */; };
-		B350B5392204690500510668 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B350B5362204656900510668 /* GoogleService-Info.plist */; };
+		B3E208E82208435900A331DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3E208E72208435900A331DB /* GoogleService-Info.plist */; };
 		CC76D5B2C15D74305F12EC96 /* Pods_AppAPNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10B078284BD65899144501B /* Pods_AppAPNS.framework */; };
 		E2A9A0642171530A00AC6153 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9A0632171530A00AC6153 /* AppDelegate.swift */; };
 		E2A9A0662171530A00AC6153 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A9A0652171530A00AC6153 /* ViewController.swift */; };
@@ -46,10 +44,10 @@
 		831C59286B4F05F8F3C2149A /* Pods-AppAPNSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppAPNSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppAPNSTests/Pods-AppAPNSTests.release.xcconfig"; sourceTree = "<group>"; };
 		A10B078284BD65899144501B /* Pods_AppAPNS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppAPNS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B350B53522043BD400510668 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
-		B350B5362204656900510668 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B350B53B22046A8F00510668 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = SOURCE_ROOT; };
 		B350B53C22046A8F00510668 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		B350B53D22046A8F00510668 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		B350B53D22046A8F00510668 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B3E208E72208435900A331DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "SensitiveData/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BC6D24A25D6A12B33EF615AA /* Pods-AppAPNS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppAPNS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppAPNS/Pods-AppAPNS.debug.xcconfig"; sourceTree = "<group>"; };
 		BE543917EA068B9D349331AF /* Pods-AppAPNSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppAPNSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppAPNSUITests/Pods-AppAPNSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C0DFE271229109697B32AF21 /* Pods-AppAPNSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppAPNSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppAPNSUITests/Pods-AppAPNSUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,7 +154,7 @@
 		E2A9A0622171530A00AC6153 /* AppAPNS */ = {
 			isa = PBXGroup;
 			children = (
-				B350B5362204656900510668 /* GoogleService-Info.plist */,
+				B3E208E72208435900A331DB /* GoogleService-Info.plist */,
 				E2A9A09821716A6700AC6153 /* AppAPNS.entitlements */,
 				E2A9A0632171530A00AC6153 /* AppDelegate.swift */,
 				E2A9A0652171530A00AC6153 /* ViewController.swift */,
@@ -323,7 +321,7 @@
 			files = (
 				E2A9A06E2171530D00AC6153 /* LaunchScreen.storyboard in Resources */,
 				E2A9A09B21717A9200AC6153 /* sound1.aiff in Resources */,
-				B350B5372204656900510668 /* GoogleService-Info.plist in Resources */,
+				B3E208E82208435900A331DB /* GoogleService-Info.plist in Resources */,
 				E2A9A06B2171530D00AC6153 /* Assets.xcassets in Resources */,
 				E2A9A0692171530A00AC6153 /* Main.storyboard in Resources */,
 			);
@@ -333,7 +331,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B350B5382204690400510668 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +338,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B350B5392204690500510668 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
